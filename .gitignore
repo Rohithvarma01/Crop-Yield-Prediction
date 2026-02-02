@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Market related files (ignore these)
+market_numeric_columns.pkl
+market_price_encoder.pkl
+market_price_model.ipynb
+market_price_model.pkl
+
+# Pickle temp files (optional safety)
+*.pkl~
