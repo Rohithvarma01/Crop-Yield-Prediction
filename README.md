@@ -7,20 +7,13 @@ This project predicts crop yield based on agricultural parameters using machine 
 - Python
 - Pandas, NumPy
 - Scikit-learn
-- Matplotlib, Seaborn
+- streanlit, Seaborn
 
 ## 📊 Dataset
 Agricultural dataset containing crop, rainfall, area, and production values.
 
 ## ⚙️ Model Used
-- Linear Regression / Random Forest (mention what you used)
-
-## 🚀 How to Run
-1. Clone the repository
-2. Install requirements:
-   pip install -r requirements.txt
-3. Run the notebook or app file
+- Linear Regression / Random Forest / Decision tree
 
 ## 📈 Output
 Predicts crop yield for given input values.
-
