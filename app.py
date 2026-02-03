@@ -15,7 +15,7 @@ def prepare_input(rainfall, temperature, days, fertilizer, irrigation, crop, soi
     input_data["Fertilizer_Used"] = fertilizer
     input_data["Irrigation_Used"] = irrigation
 
-    # One-hot encoded categorical features
+    
     crop_col = f"Crop_{crop}"
     soil_col = f"Soil_Type_{soil}"
     weather_col = f"Weather_Condition_{weather}"
@@ -39,7 +39,7 @@ st.title("🌾 Crop Yield Prediction")
 
 st.write("Enter the following details to predict crop yield")
 
-# Inputs (MATCHED WITH HTML FORM)
+
 rainfall = st.number_input("Rainfall (mm)", min_value=0.0, step=1.0)
 temperature = st.number_input("Temperature (°C)", step=0.1)
 days = st.number_input("Days to Harvest", min_value=1, step=1)
@@ -55,7 +55,7 @@ crop = st.selectbox("Crop Type", ["Cotton", "Maize", "Rice", "Soybean", "Wheat"]
 
 weather = st.selectbox("Weather Condition", ["Rainy", "Sunny"])
 
-# Prediction
+
 if st.button("Predict Yield"):
     X_ready = prepare_input(
         rainfall, temperature, days,
